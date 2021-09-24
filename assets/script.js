@@ -68,13 +68,23 @@ function writePassword() {
         return Password;
     }
 }
+//Function to copy password from input to clipboard by clicking the copy button 
 
-function Password() {
-    document.querySelector("textarea").select();
-    document.execCommand("Copy");
-    alert("Password copied to clipboard!");
-}
-
+function copyPassword() {
+    /* Get the text field */
+    var copyText = document.getElementById("btn2");
+  
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(textarea);
+    
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.textarea);
+  }
+  
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
