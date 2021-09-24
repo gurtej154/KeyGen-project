@@ -20,22 +20,22 @@ function writePassword() {
         var passwordLength = parseInt(prompt("How long would you like your password to be, between 8 and 128?"));
 
         //checks if passwordLength is a number
-        function checkPasswordString() {
+        function identifyPasswordString() {
             if (isNaN(passwordLength)) {
                 passwordLength = parseInt(prompt("Please choose a NUMBER between 8 and 128."));
-                checkPasswordString()
+                identifyPasswordString()
             }
         }
-        checkPasswordString()
+        identifyPasswordString()
         //identifies the amount of characters within the new password.
-        function checkPasswordLength() {
+        function PasswordLength() {
             if (passwordLength < 8 || passwordLength > 128) {
                 passwordLength = prompt("Make sure the number you choose is between 8 and 128.")
-                checkPasswordLength()
+                PasswordLength()
             }
 
         }
-        checkPasswordLength()
+        PasswordLength()
 
         var choice = optionOne();
         //Following allocates options of various characters for the new password 
