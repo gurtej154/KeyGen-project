@@ -69,22 +69,22 @@ function writePassword() {
     }
 }
 //Function to copy password from input to clipboard by clicking the copy button 
-
 function copyPassword() {
     /* Get the text field */
-    var copyText = document.getElementById("btn2");
+    var copyText = document.getElementById("copyPassword");
   
     /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+    copyPassword.select();
+    copyPassword.setSelectionRange(0, 99999); /* For mobile devices */
   
     /* Copy the text inside the text field */
-    navigator.clipboard.writeText(textarea);
+    navigator.clipboard.writeText(copyPassword.textarea);
     
     /* Alert the copied text */
-    alert("Copied the text: " + copyText.textarea);
+    alert("Copied the text: " + copyPassword.textarea);
+    copyPasswordbtn2.addEventListener("click", copyPassword);
   }
-  
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
