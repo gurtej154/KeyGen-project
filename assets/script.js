@@ -77,7 +77,7 @@ function copyPassword() {
     navigator.clipboard.writeText(copyText.value);
     
     /* Alert the copied text */
-    alert("Copied the text: " + copyText.textarea);
+    alert("Password copied to clipboard: " + copyText.textarea);
   }
 
 // Add event listener to generate button
