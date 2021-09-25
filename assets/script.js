@@ -27,6 +27,7 @@ function writePassword() {
             }
         }
         identifyPasswordString()
+        
         //identifies the amount of characters within the new password.
         function PasswordLength() {
             if (passwordLength < 8 || passwordLength > 128) {
@@ -38,6 +39,7 @@ function writePassword() {
         PasswordLength()
 
         var choice = optionOne();
+        
         //Following allocates options of various characters for the new password 
         function optionOne() {
             choice = ""
@@ -53,6 +55,7 @@ function writePassword() {
             if (confirm("Press OK for the password to contain special characters or press cancel.")) {
                 choice += passwordOptions.SpecialChar
             }
+
             //Expresses to the user to choose a option from the list
             if (choice === "") {
                 alert("Select at least ONE given option!");
@@ -69,7 +72,9 @@ function writePassword() {
     }
 }
 //Function to copy password from input to clipboard by clicking the copy button 
+
 function copyPassword() {
+    
     /* Get the text field */
     var copyText = document.getElementById("password");
 
