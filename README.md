@@ -4,7 +4,7 @@
 KeyGen is a password generator project that delivers a concise and effective password to the user. The project is designed to enhance the privacy and security of an individuals account, but also allows the whole process of a password to be seamless and accessible. 
 The project was developed through HTML, CSS, and JavaScript as all of knowledge and skills merged into one project. This not only tested the existing skills but also developed them exponentially to tackle more challenging projects and systems. 
 
-Through this initiative, the key understanding of JavaScript’s principles were gained and utilized to establish a password creator for visitor of the page.  
+Through this initiative, the key understanding of JavaScript’s principles were gained and utilized to establish a password creator for the visitor of the page.  
  
 ## Table of Contents - Web Portfolio - Gurtej Singh
 
