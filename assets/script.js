@@ -71,14 +71,10 @@ function writePassword() {
 //Function to copy password from input to clipboard by clicking the copy button 
 function copyPassword() {
     /* Get the text field */
-    var copyText = document.getElementById("textarea");
-  
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
-  
+    var copyText = document.getElementById("password");
+
     /* Copy the text inside the text field */
-    navigator.clipboard.writeText(copyText.textarea);
+    navigator.clipboard.writeText(copyText.value);
     
     /* Alert the copied text */
     alert("Copied the text: " + copyText.textarea);
@@ -86,4 +82,4 @@ function copyPassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
+document.getElementById("copyPassword").addEventListener("click", copyPassword);
