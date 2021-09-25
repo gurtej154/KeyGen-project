@@ -25,7 +25,7 @@ The following screenshot, displays the interface of the password generator and t
 ## Website
 
 To access the website of the password generator, please click on the following link: 
-https://gurtej154.github.io/KeyGen-project/
+<a href="https://gurtej154.github.io/KeyGen-project/" target="_blank"> Password generator</a>
 
 ## License
 Copyright (c) 2021 Gurtej Singh
