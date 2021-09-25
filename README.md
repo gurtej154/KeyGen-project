@@ -14,7 +14,7 @@ Through this initiative, the key understanding of JavaScript’s principles were
 - [Contribute](#contribute)
 
 ## Project
-The following a live-demo of the password generator, detailing how the password is generator and what steps have to be undertaken in order to develope the password. 
+The following is a live-demo of the password generator, detailing how the password is generator and what steps have to be undertaken in order to develope the password. 
 
 ![Password-generator](./Password-generator.gif)
 
